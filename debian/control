@@ -1,0 +1,12 @@
+Source: ros-groovy-ecl-config
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-ecl-build,ros-groovy-catkin,ros-groovy-ecl-license
+Homepage: http://wiki.ros.org/ecl_config
+Standards-Version: 3.9.2
+
+Package: ros-groovy-ecl-config
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-ecl-build
+Description: These tools inspect and describe your system with macros, types and functions.
