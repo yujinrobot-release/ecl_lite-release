@@ -5,7 +5,7 @@
  *
  * Macros for error-checking and program termination.
  *
- * @date April 2009.
+ * @date April 2013.
  **/
 /*****************************************************************************
 ** Ifdefs
@@ -15,8 +15,29 @@
 #define ECL_ERRORS_MACROS_HPP_
 
 /*****************************************************************************
+** Includes
+*****************************************************************************/
+
+#include <ecl/config/macros.hpp>
+
+/*****************************************************************************
 ** PreProcessing
 *****************************************************************************/
+/*
+ * Import/exports symbols for the library
+ */
+#ifdef ECL_HAS_SHARED_LIBS // ecl is being built around shared libraries
+  #ifdef ecl_errors_EXPORTS // we are building a shared lib/dll
+    #define ecl_errors_PUBLIC ECL_HELPER_EXPORT
+  #else // we are using shared lib/dll
+    #define ecl_errors_PUBLIC ECL_HELPER_IMPORT
+  #endif
+  #define ecl_errors_LOCAL ECL_HELPERS_LOCAL
+#else // ecl is being built around static libraries
+  #define ecl_errors_PUBLIC
+  #define ecl_errors_LOCAL
+#endif
+
 /*
  * Convert a variable name to a string.
  */

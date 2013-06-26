@@ -13,7 +13,7 @@ find_package(catkin REQUIRED COMPONENTS ecl_config)
 catkin_package(
 	INCLUDE_DIRS include
 	)
-include_directories(SYSTEM include ${catkin_INCLUDE_DIRS})
+include_directories(include ${catkin_INCLUDE_DIRS})
 
 ##############################################################################
 # Actual project configuration
@@ -21,5 +21,4 @@ include_directories(SYSTEM include ${catkin_INCLUDE_DIRS})
 
 add_subdirectory(include)
 add_subdirectory(src)
-
 
