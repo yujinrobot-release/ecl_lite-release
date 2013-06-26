@@ -1,0 +1,12 @@
+Source: ros-hydro-ecl-sigslots-lite
+Section: misc
+Priority: extra
+Maintainer: "Daniel Stonier <d.stonier@gmail.com>"
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin, ros-hydro-ecl-config, ros-hydro-ecl-errors, ros-hydro-ecl-license
+Homepage: http://wiki.ros.org/ecl_sigslots_lite
+Standards-Version: 3.9.2
+
+Package: ros-hydro-ecl-sigslots-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-ecl-config, ros-hydro-ecl-errors, ros-hydro-ecl-license
+Description: This avoids use of dynamic storage (malloc/new) and thread safety (mutexes) to provide a very simple sigslots implementation that can be used for *very* embedded development.
