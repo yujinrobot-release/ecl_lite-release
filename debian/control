@@ -1,0 +1,12 @@
+Source: ros-hydro-ecl-converters-lite
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin, ros-hydro-ecl-config, ros-hydro-ecl-license
+Homepage: http://wiki.ros.org/ecl_converters_lite
+Standards-Version: 3.9.2
+
+Package: ros-hydro-ecl-converters-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-ecl-config, ros-hydro-ecl-license
+Description: These are a very simple version of some of the functions in ecl_converters suitable for firmware development. That is, there is no use of new, templates or exceptions.
