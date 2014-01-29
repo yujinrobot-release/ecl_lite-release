@@ -1,0 +1,12 @@
+Source: ros-hydro-ecl-lite
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin
+Homepage: http://www.ros.org/wiki/ecl_lite
+Standards-Version: 3.9.2
+
+Package: ros-hydro-ecl-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-ecl-config, ros-hydro-ecl-converters-lite, ros-hydro-ecl-errors, ros-hydro-ecl-io, ros-hydro-ecl-sigslots-lite, ros-hydro-ecl-time-lite
+Description: Libraries and utilities for embedded and low-level linux development.
