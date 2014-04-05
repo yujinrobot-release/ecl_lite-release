@@ -1,0 +1,12 @@
+Source: ros-indigo-ecl-errors
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-indigo-catkin, ros-indigo-ecl-config, ros-indigo-ecl-license
+Homepage: http://wiki.ros.org/ecl_errors
+Standards-Version: 3.9.2
+
+Package: ros-indigo-ecl-errors
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-ecl-config, ros-indigo-ecl-license
+Description: This library provides lean and mean error mechanisms. It includes c style error functions as well as a few useful macros. For higher level mechanisms, refer to ecl_exceptions.
