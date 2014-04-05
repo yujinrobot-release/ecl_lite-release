@@ -1,3 +1,29 @@
+## ecl_lite (indigo) - 0.60.1-0
+
+User `snorri@snorriheim` released the packages in the `ecl_lite` repository into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --rosdistro indigo ecl_lite` on `Sat, 05 Apr 2014 05:58:18 -0000`
+
+These packages were released:
+- `ecl_config`
+- `ecl_converters_lite`
+- `ecl_errors`
+- `ecl_io`
+- `ecl_lite`
+- `ecl_sigslots_lite`
+- `ecl_time_lite`
+
+Version of package(s) in repository `ecl_lite`:
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.60.1-0`
+
+Versions of tools used:
+- bloom version: `0.5.2`
+- catkin_pkg version: `0.1.27`
+- rosdep version: `0.10.25`
+- rosdistro version: `0.3.4`
+- vcstools version: `0.1.31`
+
+
 ## ecl_lite - 0.60.1-0
 
 User `snorri@snorriwork64` released the packages in the `ecl_lite` repository by running `/usr/bin/bloom-release --track hydro --rosdistro hydro ecl_lite` on `Wed, 29 Jan 2014 08:11:03 -0000`
