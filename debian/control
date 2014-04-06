@@ -1,0 +1,12 @@
+Source: ros-indigo-ecl-converters-lite
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-indigo-catkin, ros-indigo-ecl-config, ros-indigo-ecl-license
+Homepage: http://wiki.ros.org/ecl_converters_lite
+Standards-Version: 3.9.2
+
+Package: ros-indigo-ecl-converters-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-ecl-config, ros-indigo-ecl-license
+Description: These are a very simple version of some of the functions in ecl_converters suitable for firmware development. That is, there is no use of new, templates or exceptions.
