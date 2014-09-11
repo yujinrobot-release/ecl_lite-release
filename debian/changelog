@@ -1,8 +1,0 @@
-ros-indigo-ecl-time-lite (0.60.1-2saucy) saucy; urgency=high
-
-  * update to catkin's CFG_EXTRAS for easy to find cmake modules.
-  * Contributors: Daniel Stonier
-
- -- Daniel Stonier <d.stonier@gmail.com>  Tue, 28 Jan 2014 15:00:00 -0000
-
-
