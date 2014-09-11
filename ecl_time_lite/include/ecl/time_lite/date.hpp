@@ -1,16 +1,14 @@
 /**
- * @file /include/ecl/time_lite/types_pos.hpp
+ * @file /include/ecl/time_lite/date.hpp
  *
- * @brief Posix definition for time types.
- *
- * @date February, 2011
+ * @brief Date manipulations.
  **/
 /*****************************************************************************
 ** Ifdefs
 *****************************************************************************/
 
-#ifndef ECL_TIME_LITE_TYPES_POS_HPP_
-#define ECL_TIME_LITE_TYPES_POS_HPP_
+#ifndef ECL_TIME_LITE_DATE_HPP_
+#define ECL_TIME_LITE_DATE_HPP_
 
 /*****************************************************************************
 ** Cross Platform Configuration
@@ -18,14 +16,16 @@
 
 #include <ecl/time_lite/config.hpp>
 
-#if defined(ECL_HAS_MACH_TIMERS) || defined(ECL_HAS_POSIX_TIMERS) || defined(ECL_HAS_RT_TIMERS)
+#if defined(ECL_HAS_POSIX_TIMERS) || defined (ECL_HAS_RT_TIMERS)
 
 /*****************************************************************************
 ** Includes
 *****************************************************************************/
 
-#include <ctime>
-#include <ecl/config/macros.hpp>
+///#include <ctime> // time structs, nanosleep
+//#include <sys/time.h> // gettimeofday
+#include <string>
+#include "macros.hpp"
 
 /*****************************************************************************
 ** Namespaces
@@ -33,14 +33,20 @@
 
 namespace ecl {
 
+/*****************************************************************************
+** Implementations
+*****************************************************************************/
+
 /**
- * @brief Standard cross platform time structure.
+ * @brief Get the date/time as a string.
  *
- * This is already supplied by posix systems as timespec.
+ * Simple function to generate a usable string for uniquely creating
+ * things like filenames.
  */
-typedef timespec TimeStructure;
+ecl_time_lite_PUBLIC std::string get_date_string();
 
 } // namespace ecl
 
-#endif
-#endif /* ECL_TIME_LITE_TYPES_POS_HPP_ */
+#endif  // POSIX or RT TIMERS
+
+#endif // ECL_TIME_LITE_DATE_HPP_
