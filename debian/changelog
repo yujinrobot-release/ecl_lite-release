@@ -1,0 +1,15 @@
+ros-indigo-ecl-time-lite (0.61.0-0saucy) saucy; urgency=high
+
+  * unique get date string function for unique filename creation.
+  * optional flag for getting real time instead of monolithic posix time (this syncs with ROS)
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Thu, 11 Sep 2014 15:00:00 -0000
+
+ros-indigo-ecl-time-lite (0.60.1-0saucy) saucy; urgency=high
+
+  * update to catkin's CFG_EXTRAS for easy to find cmake modules.
+  * Contributors: Daniel Stonier
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Tue, 28 Jan 2014 15:00:00 -0000
+
+
