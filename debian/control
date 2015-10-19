@@ -1,0 +1,12 @@
+Source: ros-jade-ecl-errors
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-ecl-config, ros-jade-ecl-license
+Homepage: http://wiki.ros.org/ecl_errors
+Standards-Version: 3.9.2
+
+Package: ros-jade-ecl-errors
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-ecl-config, ros-jade-ecl-license
+Description: This library provides lean and mean error mechanisms. It includes c style error functions as well as a few useful macros. For higher level mechanisms, refer to ecl_exceptions.
