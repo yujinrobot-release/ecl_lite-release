@@ -1,0 +1,12 @@
+Source: ros-jade-ecl-time-lite
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-ecl-build, ros-jade-ecl-config, ros-jade-ecl-errors, ros-jade-ecl-license
+Homepage: http://wiki.ros.org/ecl_time_lite
+Standards-Version: 3.9.2
+
+Package: ros-jade-ecl-time-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-ecl-build, ros-jade-ecl-config, ros-jade-ecl-errors, ros-jade-ecl-license
+Description: Provides a portable set of time functions that are especially useful for porting other code or being wrapped by higher level c++ classes.
