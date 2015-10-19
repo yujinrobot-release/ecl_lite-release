@@ -1,0 +1,12 @@
+Source: ros-jade-ecl-sigslots-lite
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-ecl-config, ros-jade-ecl-errors, ros-jade-ecl-license
+Homepage: http://wiki.ros.org/ecl_sigslots_lite
+Standards-Version: 3.9.2
+
+Package: ros-jade-ecl-sigslots-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-ecl-config, ros-jade-ecl-errors, ros-jade-ecl-license
+Description: This avoids use of dynamic storage (malloc/new) and thread safety (mutexes) to provide a very simple sigslots implementation that can be used for *very* embedded development.
