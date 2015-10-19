@@ -1,0 +1,12 @@
+Source: ros-jade-ecl-lite
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin
+Homepage: http://www.ros.org/wiki/ecl_lite
+Standards-Version: 3.9.2
+
+Package: ros-jade-ecl-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-ecl-config, ros-jade-ecl-converters-lite, ros-jade-ecl-errors, ros-jade-ecl-io, ros-jade-ecl-sigslots-lite, ros-jade-ecl-time-lite
+Description: Libraries and utilities for embedded and low-level linux development.
