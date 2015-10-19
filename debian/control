@@ -1,0 +1,12 @@
+Source: ros-jade-ecl-io
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-ecl-config, ros-jade-ecl-errors, ros-jade-ecl-license
+Homepage: http://wiki.ros.org/ecl_io
+Standards-Version: 3.9.2
+
+Package: ros-jade-ecl-io
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-ecl-config, ros-jade-ecl-errors, ros-jade-ecl-license
+Description: Most implementations (windows, posix, ...) have slightly different api for low level input-output functions. These are gathered here and re-represented with a cross platform set of functions.
