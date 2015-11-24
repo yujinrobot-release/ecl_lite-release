@@ -1,7 +1,0 @@
-ros-indigo-ecl-errors (0.61.1-0trusty) trusty; urgency=high
-
-  * Add a missing virtual destructor
-
- -- Daniel Stonier <d.stonier@gmail.com>  Sat, 25 Jul 2015 15:00:00 -0000
-
-
