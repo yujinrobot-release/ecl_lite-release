@@ -1,0 +1,12 @@
+Source: ros-indigo-ecl-time-lite
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-ecl-build, ros-indigo-ecl-config, ros-indigo-ecl-errors, ros-indigo-ecl-license
+Homepage: http://wiki.ros.org/ecl_time_lite
+Standards-Version: 3.9.2
+
+Package: ros-indigo-ecl-time-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-ecl-build, ros-indigo-ecl-config, ros-indigo-ecl-errors, ros-indigo-ecl-license
+Description: Provides a portable set of time functions that are especially useful for porting other code or being wrapped by higher level c++ classes.
