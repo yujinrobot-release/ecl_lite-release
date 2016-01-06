@@ -1,0 +1,14 @@
+ros-indigo-ecl-config (0.61.3-0saucy) saucy; urgency=high
+
+  * deprecation macro for clang.
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Tue, 05 Jan 2016 15:00:00 -0000
+
+ros-indigo-ecl-config (0.60.1-0saucy) saucy; urgency=high
+
+  * update to catkin's CFG_EXTRAS for easy to find cmake modules.
+  * Contributors: Daniel Stonier
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Tue, 28 Jan 2014 15:00:00 -0000
+
+
