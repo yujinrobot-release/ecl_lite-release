@@ -1,0 +1,12 @@
+Source: ros-kinetic-ecl-console
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-ecl-build, ros-indigo-ecl-config, ros-indigo-ecl-license, ros-kinetic-catkin
+Homepage: http://wiki.ros.org/ecl_console
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-ecl-console
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-ecl-build, ros-indigo-ecl-config, ros-indigo-ecl-license
+Description: Color codes for ansii consoles.
