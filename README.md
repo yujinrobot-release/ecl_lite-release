@@ -1,3 +1,32 @@
+## ecl_lite (kinetic) - 0.61.4-0
+
+The packages in the `ecl_lite` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release ecl_lite --track kinetic --rosdistro kinetic --new-track` on `Sat, 23 Apr 2016 07:50:29 -0000`
+
+These packages were released:
+- `ecl_config`
+- `ecl_console`
+- `ecl_converters_lite`
+- `ecl_errors`
+- `ecl_io`
+- `ecl_lite`
+- `ecl_sigslots_lite`
+- `ecl_time_lite`
+
+Version of package(s) in repository `ecl_lite`:
+- upstream repository: https://github.com/stonier/ecl_lite.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.61.4-0`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.4`
+- vcstools version: `0.1.35`
+
+
 ## ecl_lite (indigo) - 0.61.4-0
 
 The packages in the `ecl_lite` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --rosdistro indigo ecl_lite` on `Sat, 09 Jan 2016 17:17:59 -0000`
