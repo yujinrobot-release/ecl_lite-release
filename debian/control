@@ -1,0 +1,12 @@
+Source: ros-kinetic-ecl-lite
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: http://www.ros.org/wiki/ecl_lite
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-ecl-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-ecl-config, ros-kinetic-ecl-converters-lite, ros-kinetic-ecl-errors, ros-kinetic-ecl-io, ros-kinetic-ecl-sigslots-lite, ros-kinetic-ecl-time-lite
+Description: Libraries and utilities for embedded and low-level linux development.
