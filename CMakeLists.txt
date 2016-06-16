@@ -16,17 +16,26 @@ find_package(catkin REQUIRED COMPONENTS ecl_build ecl_config)
 ##############################################################################
 
 catkin_package(
-        INCLUDE_DIRS
-            include
-        CATKIN_DEPENDS
-            ecl_config
-	)
-
+    INCLUDE_DIRS
+        include
+    CATKIN_DEPENDS
+        ecl_build
+        ecl_config
+)
 
 ##############################################################################
-# Actual project configuration
+# Project configuration
 ##############################################################################
 
+ecl_enable_cxx11_compiler()
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_subdirectory(include)
+##############################################################################
+# Installs
+##############################################################################
+
+install(
+  DIRECTORY include/ecl/
+  DESTINATION ${CATKIN_GLOBAL_INCLUDE_DESTINATION}/ecl
+  FILES_MATCHING PATTERN "*.hpp"
+)
