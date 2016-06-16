@@ -1,0 +1,7 @@
+ros-kinetic-ecl-io (0.61.6-0xenial) xenial; urgency=high
+
+  * accomodate platforms (e.g. macosx) without SOCK_NONBLOCK
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Wed, 15 Jun 2016 15:00:00 -0000
+
+

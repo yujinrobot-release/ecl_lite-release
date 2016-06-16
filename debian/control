@@ -1,0 +1,13 @@
+Source: ros-kinetic-ecl-io
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-ecl-config, ros-kinetic-ecl-errors, ros-kinetic-ecl-license
+Homepage: http://wiki.ros.org/ecl_io
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-ecl-io
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-ecl-config, ros-kinetic-ecl-errors, ros-kinetic-ecl-license
+Description: Most implementations (windows, posix, ...) have slightly different api for low level input-output functions.
+ These are gathered here and re-represented with a cross platform set of functions.
