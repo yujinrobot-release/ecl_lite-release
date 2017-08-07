@@ -1,0 +1,12 @@
+Source: ros-lunar-ecl-lite
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin
+Homepage: http://www.ros.org/wiki/ecl_lite
+Standards-Version: 3.9.2
+
+Package: ros-lunar-ecl-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-ecl-config, ros-lunar-ecl-converters-lite, ros-lunar-ecl-errors, ros-lunar-ecl-io, ros-lunar-ecl-sigslots-lite, ros-lunar-ecl-time-lite
+Description: Libraries and utilities for embedded and low-level linux development.
