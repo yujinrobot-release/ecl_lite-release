@@ -1,0 +1,12 @@
+Source: ros-lunar-ecl-config
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin, ros-lunar-ecl-build, ros-lunar-ecl-license
+Homepage: http://wiki.ros.org/ecl_config
+Standards-Version: 3.9.2
+
+Package: ros-lunar-ecl-config
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-ecl-build, ros-lunar-ecl-license
+Description: These tools inspect and describe your system with macros, types and functions.
