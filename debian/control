@@ -1,0 +1,13 @@
+Source: ros-melodic-ecl-converters-lite
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-ecl-config, ros-melodic-ecl-license
+Homepage: http://wiki.ros.org/ecl_converters_lite
+Standards-Version: 3.9.2
+
+Package: ros-melodic-ecl-converters-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-ecl-config, ros-melodic-ecl-license
+Description: These are a very simple version of some of the functions in ecl_converters suitable for firmware development.
+ That is, there is no use of new, templates or exceptions.
