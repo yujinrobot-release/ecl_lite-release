@@ -1,3 +1,33 @@
+## ecl_lite (bouncy) - 1.0.0-0
+
+The packages in the `ecl_lite` repository were released into the `bouncy` distro by running `/usr/bin/bloom-release --track bouncy --rosdistro bouncy ecl_lite` on `Thu, 27 Sep 2018 15:01:37 -0000`
+
+These packages were released:
+- `ecl_config`
+- `ecl_console`
+- `ecl_converters_lite`
+- `ecl_errors`
+- `ecl_io`
+- `ecl_sigslots_lite`
+- `ecl_time_lite`
+
+Version of package(s) in repository `ecl_lite`:
+
+- upstream repository: https://github.com/stonier/ecl_lite.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.0.0-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.7`
+- catkin_pkg version: `0.4.8`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.9`
+- vcstools version: `0.1.40`
+
+
 ## ecl_lite (melodic) - 0.61.6-0
 
 The packages in the `ecl_lite` repository were released into the `melodic` distro by running `/usr/bin/bloom-release --track melodic --rosdistro melodic ecl_lite` on `Sat, 12 May 2018 14:18:42 -0000`
