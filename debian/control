@@ -1,0 +1,12 @@
+Source: ros-bouncy-ecl-time-lite
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-bouncy-ament-cmake-ros, ros-bouncy-ecl-build, ros-bouncy-ecl-config, ros-bouncy-ecl-errors, ros-bouncy-ecl-license, ros-bouncy-ros-workspace
+Homepage: http://wiki.ros.org/ecl_time_lite
+Standards-Version: 3.9.2
+
+Package: ros-bouncy-ecl-time-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-bouncy-ecl-build, ros-bouncy-ecl-config, ros-bouncy-ecl-errors, ros-bouncy-ecl-license, ros-bouncy-ros-workspace
+Description: Provides a portable set of time functions that are especially useful for porting other code or being wrapped by higher level c++ classes.
