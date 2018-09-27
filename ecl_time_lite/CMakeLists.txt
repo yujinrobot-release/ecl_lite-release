@@ -2,47 +2,46 @@
 # Cmake
 ##############################################################################
 
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(ecl_time_lite)
 
 ##############################################################################
-# Catkin
+# Find Packages
 ##############################################################################
 
-find_package(catkin REQUIRED COMPONENTS ecl_build ecl_config ecl_errors)
-file(MAKE_DIRECTORY ${CATKIN_DEVEL_PREFIX}/include)
+find_package(ament_cmake_ros REQUIRED)
+find_package(ecl_build REQUIRED)
+find_package(ecl_config REQUIRED)
+find_package(ecl_errors REQUIRED)
 
 ##############################################################################
-# Platform Configuration
+# Project Configuration
 ##############################################################################
 
-# This configures ECL_PLATFORM_TIME_LIBRARIES and 
+ament_package_xml()
+ecl_enable_cxx14_compiler()
+
+file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/include)
+
+# This configures ECL_PLATFORM_TIME_LIBRARIES and
 # other ECL_PLATFORM_HAS_XXX flags
-ecl_detect_timers()  
+ecl_detect_timers()
 
 ##############################################################################
-# Exports
-##############################################################################
-
-catkin_package(
-        INCLUDE_DIRS include ${CATKIN_DEVEL_PREFIX}/include
-        LIBRARIES ${PROJECT_NAME}
-        DEPENDS ECL_PLATFORM_TIME
-	)
-include_directories(include ${catkin_INCLUDE_DIRS})
-
-##############################################################################
-# CMake File Configuration
-##############################################################################
-
-# Make sure we pick up cmake configured files
-include_directories(${CATKIN_DEVEL_PREFIX}/include)
-
-##############################################################################
-# Actual project configuration
+# Sources
 ##############################################################################
 
 add_subdirectory(include)
 add_subdirectory(src)
 
+##############################################################################
+# Exports
+##############################################################################
 
+ament_export_include_directories(include)
+ament_export_interfaces(HAS_LIBRARY_TARGET ${PROJECT_NAME})
+ament_export_dependencies(
+    ecl_config
+    ecl_errors
+)
+ament_package()

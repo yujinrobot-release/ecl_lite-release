@@ -2,11 +2,11 @@
 # Cmake
 ##############################################################################
 
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(ecl_io)
 
 ##############################################################################
-# Catkin
+# Sockets
 ##############################################################################
 
 set(sockets_INCLUDE_DIRS "") # Just assume they're in the system dirs for now
@@ -19,21 +19,40 @@ else()
 endif()
 
 ##############################################################################
-# Catkin
+# Find Packages
 ##############################################################################
 
-find_package(catkin REQUIRED COMPONENTS ecl_config ecl_errors)
-catkin_package(
-        INCLUDE_DIRS include
-        LIBRARIES ${PROJECT_NAME}
-        DEPENDS sockets
-        )
-include_directories(include ${catkin_INCLUDE_DIRS})
+find_package(ament_cmake_ros REQUIRED)
+find_package(ecl_build REQUIRED)
+find_package(ecl_config REQUIRED)
+find_package(ecl_errors REQUIRED)
 
 ##############################################################################
-# Actual project configuration
+# Project Configuration
+##############################################################################
+
+ament_package_xml()
+ecl_enable_cxx14_compiler()
+
+include_directories(include
+  ${ecl_config_INCLUDE_DIRS}
+  ${ecl_errors_INCLUDE_DIRS}
+  )
+
+##############################################################################
+# Sources
 ##############################################################################
 
 add_subdirectory(include)
 add_subdirectory(src)
 
+##############################################################################
+# Exports
+##############################################################################
+
+ament_export_interfaces(HAS_LIBRARY_TARGET ${PROJECT_NAME})
+ament_export_dependencies(
+    ecl_config
+    ecl_errors
+)
+ament_package()

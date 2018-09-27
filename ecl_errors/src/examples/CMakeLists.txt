@@ -1,7 +1,20 @@
 ###############################################################################
+# Macro
+###############################################################################
+
+macro(ecl_errors_add_example name)
+  set(target_name ecl_errors_example_${name})
+  add_executable(${target_name} ${name}.cpp)
+  target_link_libraries(${target_name}
+    ${PROJECT_NAME}
+  )
+  set_target_properties(${target_name} PROPERTIES OUTPUT_NAME demo_${name})
+  set_target_properties(${target_name} PROPERTIES COMPILE_FLAGS "-Wno-unused-local-typedefs")
+  install(TARGETS ${target_name} RUNTIME DESTINATION lib/${PROJECT_NAME})
+endmacro()
+
+###############################################################################
 # Examples
 ###############################################################################
 
-add_executable(ecl_demo_errors errors.cpp)
-target_link_libraries(ecl_demo_errors ecl_errors)
-install(TARGETS ecl_demo_errors RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}) 
+ecl_errors_add_example(errors)
