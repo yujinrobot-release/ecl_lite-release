@@ -1,3 +1,34 @@
+## ecl_lite (crystal) - 1.0.1-0
+
+The packages in the `ecl_lite` repository were released into the `crystal` distro by running `/usr/bin/bloom-release --track crystal --rosdistro crystal ecl_lite` on `Tue, 01 Jan 2019 15:40:02 -0000`
+
+These packages were released:
+- `ecl_config`
+- `ecl_console`
+- `ecl_converters_lite`
+- `ecl_errors`
+- `ecl_io`
+- `ecl_lite`
+- `ecl_sigslots_lite`
+- `ecl_time_lite`
+
+Version of package(s) in repository `ecl_lite`:
+
+- upstream repository: https://github.com/stonier/ecl_lite.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.0.1-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.9`
+- catkin_pkg version: `0.4.9`
+- rosdep version: `0.13.0`
+- rosdistro version: `0.7.0`
+- vcstools version: `0.1.40`
+
+
 ## ecl_lite (bouncy) - 1.0.0-0
 
 The packages in the `ecl_lite` repository were released into the `bouncy` distro by running `/usr/bin/bloom-release --track bouncy --rosdistro bouncy ecl_lite` on `Thu, 27 Sep 2018 15:01:37 -0000`
