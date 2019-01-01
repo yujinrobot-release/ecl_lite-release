@@ -1,0 +1,12 @@
+Source: ros-crystal-ecl-lite
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-crystal-ament-cmake-ros, ros-crystal-ros-workspace
+Homepage: http://www.ros.org/wiki/ecl_lite
+Standards-Version: 3.9.2
+
+Package: ros-crystal-ecl-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-crystal-ecl-config, ros-crystal-ecl-converters-lite, ros-crystal-ecl-errors, ros-crystal-ecl-io, ros-crystal-ecl-sigslots-lite, ros-crystal-ecl-time-lite, ros-crystal-ros-workspace
+Description: Libraries and utilities for embedded and low-level linux development.
