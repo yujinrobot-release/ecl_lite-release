@@ -1,0 +1,12 @@
+Source: ros-crystal-ecl-console
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-crystal-ament-cmake-ros, ros-crystal-ecl-build, ros-crystal-ecl-config, ros-crystal-ecl-license, ros-crystal-ros-workspace
+Homepage: http://wiki.ros.org/ecl_console
+Standards-Version: 3.9.2
+
+Package: ros-crystal-ecl-console
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-crystal-ecl-build, ros-crystal-ecl-config, ros-crystal-ecl-license, ros-crystal-ros-workspace
+Description: Color codes for ansii consoles.
