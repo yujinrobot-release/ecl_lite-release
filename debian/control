@@ -1,0 +1,12 @@
+Source: ros-crystal-ecl-config
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-crystal-ament-cmake-gtest, ros-crystal-ament-cmake-ros, ros-crystal-ament-lint-auto, ros-crystal-ament-lint-common, ros-crystal-ecl-build, ros-crystal-ecl-license, ros-crystal-ros-workspace
+Homepage: http://wiki.ros.org/ecl_config
+Standards-Version: 3.9.2
+
+Package: ros-crystal-ecl-config
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-crystal-ecl-build, ros-crystal-ecl-license, ros-crystal-ros-workspace
+Description: These tools inspect and describe your system with macros, types and functions.
