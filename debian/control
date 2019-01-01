@@ -1,0 +1,13 @@
+Source: ros-crystal-ecl-errors
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-crystal-ament-cmake-ros, ros-crystal-ecl-build, ros-crystal-ecl-config, ros-crystal-ecl-license, ros-crystal-ros-workspace
+Homepage: http://wiki.ros.org/ecl_errors
+Standards-Version: 3.9.2
+
+Package: ros-crystal-ecl-errors
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-crystal-ecl-config, ros-crystal-ecl-license, ros-crystal-ros-workspace
+Description: This library provides lean and mean error mechanisms.
+ It includes c style error functions as well as a few useful macros. For higher level mechanisms, refer to ecl_exceptions.
