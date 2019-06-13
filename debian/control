@@ -1,0 +1,13 @@
+Source: ros-dashing-ecl-io
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake-ros, ros-dashing-ecl-build, ros-dashing-ecl-config, ros-dashing-ecl-errors, ros-dashing-ecl-license, ros-dashing-ros-workspace
+Homepage: http://wiki.ros.org/ecl_io
+Standards-Version: 3.9.2
+
+Package: ros-dashing-ecl-io
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-ecl-config, ros-dashing-ecl-errors, ros-dashing-ecl-license, ros-dashing-ros-workspace
+Description: Most implementations (windows, posix, ...) have slightly different api for low level input-output functions.
+ These are gathered here and re-represented with a cross platform set of functions.
