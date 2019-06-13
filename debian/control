@@ -1,0 +1,12 @@
+Source: ros-dashing-ecl-lite
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake-ros, ros-dashing-ros-workspace
+Homepage: http://www.ros.org/wiki/ecl_lite
+Standards-Version: 3.9.2
+
+Package: ros-dashing-ecl-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-ecl-config, ros-dashing-ecl-converters-lite, ros-dashing-ecl-errors, ros-dashing-ecl-io, ros-dashing-ecl-sigslots-lite, ros-dashing-ecl-time-lite, ros-dashing-ros-workspace
+Description: Libraries and utilities for embedded and low-level linux development.
