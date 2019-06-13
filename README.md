@@ -1,3 +1,34 @@
+## ecl_lite (dashing) - 1.0.1-1
+
+The packages in the `ecl_lite` repository were released into the `dashing` distro by running `/usr/bin/bloom-release --track dashing --rosdistro dashing ecl_lite` on `Thu, 13 Jun 2019 16:00:47 -0000`
+
+These packages were released:
+- `ecl_config`
+- `ecl_console`
+- `ecl_converters_lite`
+- `ecl_errors`
+- `ecl_io`
+- `ecl_lite`
+- `ecl_sigslots_lite`
+- `ecl_time_lite`
+
+Version of package(s) in repository `ecl_lite`:
+
+- upstream repository: https://github.com/stonier/ecl_lite.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.0.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.8.0`
+- catkin_pkg version: `0.4.10`
+- rosdep version: `0.15.0`
+- rosdistro version: `0.7.2`
+- vcstools version: `0.1.40`
+
+
 ## ecl_lite (crystal) - 1.0.1-0
 
 The packages in the `ecl_lite` repository were released into the `crystal` distro by running `/usr/bin/bloom-release --track crystal --rosdistro crystal ecl_lite` on `Tue, 01 Jan 2019 15:40:02 -0000`
