@@ -1,3 +1,34 @@
+## ecl_lite (dashing) - 1.0.3-1
+
+The packages in the `ecl_lite` repository were released into the `dashing` distro by running `/usr/bin/bloom-release --track dashing --rosdistro dashing ecl_lite` on `Thu, 22 Aug 2019 11:58:25 -0000`
+
+These packages were released:
+- `ecl_config`
+- `ecl_console`
+- `ecl_converters_lite`
+- `ecl_errors`
+- `ecl_io`
+- `ecl_lite`
+- `ecl_sigslots_lite`
+- `ecl_time_lite`
+
+Version of package(s) in repository `ecl_lite`:
+
+- upstream repository: https://github.com/stonier/ecl_lite.git
+- release repository: https://github.com/yujinrobot-release/ecl_lite-release.git
+- rosdistro version: `1.0.1-1`
+- old version: `1.0.1-1`
+- new version: `1.0.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.8.0`
+- catkin_pkg version: `0.4.13`
+- rosdep version: `0.15.2`
+- rosdistro version: `0.7.4`
+- vcstools version: `0.1.40`
+
+
 ## ecl_lite (dashing) - 1.0.1-1
 
 The packages in the `ecl_lite` repository were released into the `dashing` distro by running `/usr/bin/bloom-release --track dashing --rosdistro dashing ecl_lite` on `Thu, 13 Jun 2019 16:00:47 -0000`
