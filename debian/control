@@ -1,0 +1,12 @@
+Source: ros-eloquent-ecl-sigslots-lite
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-eloquent-ament-cmake-ros, ros-eloquent-ecl-build, ros-eloquent-ecl-config, ros-eloquent-ecl-errors, ros-eloquent-ecl-license, ros-eloquent-ros-workspace
+Homepage: http://wiki.ros.org/ecl_sigslots_lite
+Standards-Version: 3.9.2
+
+Package: ros-eloquent-ecl-sigslots-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-eloquent-ecl-config, ros-eloquent-ecl-errors, ros-eloquent-ecl-license, ros-eloquent-ros-workspace
+Description: This avoids use of dynamic storage (malloc/new) and thread safety (mutexes) to provide a very simple sigslots implementation that can be used for *very* embedded development.
