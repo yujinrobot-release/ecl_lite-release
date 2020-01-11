@@ -1,0 +1,13 @@
+Source: ros-eloquent-ecl-io
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-eloquent-ament-cmake-ros, ros-eloquent-ecl-build, ros-eloquent-ecl-config, ros-eloquent-ecl-errors, ros-eloquent-ecl-license, ros-eloquent-ros-workspace
+Homepage: http://wiki.ros.org/ecl_io
+Standards-Version: 3.9.2
+
+Package: ros-eloquent-ecl-io
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-eloquent-ecl-config, ros-eloquent-ecl-errors, ros-eloquent-ecl-license, ros-eloquent-ros-workspace
+Description: Most implementations (windows, posix, ...) have slightly different api for low level input-output functions.
+ These are gathered here and re-represented with a cross platform set of functions.
