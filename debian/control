@@ -1,0 +1,12 @@
+Source: ros-eloquent-ecl-lite
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-eloquent-ament-cmake-ros, ros-eloquent-ros-workspace
+Homepage: http://www.ros.org/wiki/ecl_lite
+Standards-Version: 3.9.2
+
+Package: ros-eloquent-ecl-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-eloquent-ecl-config, ros-eloquent-ecl-converters-lite, ros-eloquent-ecl-errors, ros-eloquent-ecl-io, ros-eloquent-ecl-sigslots-lite, ros-eloquent-ecl-time-lite, ros-eloquent-ros-workspace
+Description: Libraries and utilities for embedded and low-level linux development.
