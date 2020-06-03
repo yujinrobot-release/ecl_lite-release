@@ -1,3 +1,34 @@
+## ecl_lite (noetic) - 0.61.6-1
+
+The packages in the `ecl_lite` repository were released into the `noetic` distro by running `/usr/bin/bloom-release --track noetic --rosdistro noetic ecl_lite` on `Wed, 03 Jun 2020 13:26:44 -0000`
+
+These packages were released:
+- `ecl_config`
+- `ecl_console`
+- `ecl_converters_lite`
+- `ecl_errors`
+- `ecl_io`
+- `ecl_lite`
+- `ecl_sigslots_lite`
+- `ecl_time_lite`
+
+Version of package(s) in repository `ecl_lite`:
+
+- upstream repository: https://github.com/stonier/ecl_lite.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.61.6-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.3`
+- catkin_pkg version: `0.4.16`
+- rosdep version: `0.18.0`
+- rosdistro version: `0.8.0`
+- vcstools version: `0.1.40`
+
+
 ## ecl_lite (eloquent) - 1.0.6-1
 
 The packages in the `ecl_lite` repository were released into the `eloquent` distro by running `/usr/bin/bloom-release --track eloquent --rosdistro eloquent ecl_lite` on `Thu, 26 Mar 2020 05:00:44 -0000`
