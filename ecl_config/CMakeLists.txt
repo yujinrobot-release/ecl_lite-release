@@ -2,65 +2,33 @@
 # Cmake
 ##############################################################################
 
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 2.8.3)
 project(ecl_config)
 
 ##############################################################################
-# Find Packages
+# Catkin
 ##############################################################################
 
-# Turn -isystem off. Actually like to see warnings from underlying packages
-# and regardless, have run into trouble because of the ordering it induces.
-set(CMAKE_NO_SYSTEM_FROM_IMPORTED TRUE)
-
-find_package(ament_cmake_ros REQUIRED)
-find_package(ecl_build REQUIRED)
+find_package(catkin REQUIRED COMPONENTS ecl_build)
+file(MAKE_DIRECTORY ${CATKIN_DEVEL_PREFIX}/include)
+catkin_package(
+	INCLUDE_DIRS include ${CATKIN_DEVEL_PREFIX}/include
+	)
 
 ##############################################################################
-# Project Configuration
+# ECL Configuration
 ##############################################################################
 
-file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/include)
-
-ecl_enable_cxx14_compiler()
-ecl_enable_cxx_warnings()
 ecl_detect_platform()
+include_directories(${CATKIN_DEVEL_PREFIX}/include)
 
 ##############################################################################
-# Header Library Targets
+# Actual project configuration
 ##############################################################################
 
-add_library(${PROJECT_NAME} INTERFACE)
-
-target_include_directories(
-  ${PROJECT_NAME}
-  INTERFACE
-    $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
-    $<BUILD_INTERFACE:${PROJECT_BINARY_DIR}/include>
-    $<INSTALL_INTERFACE:include>
-)
-
-install(TARGETS ${PROJECT_NAME} EXPORT ${PROJECT_NAME}
-  RUNTIME DESTINATION bin
-  ARCHIVE DESTINATION lib
-  LIBRARY DESTINATION lib
-)
-
-##############################################################################
-# Sources
-##############################################################################
+include_directories(${catkin_INCLUDE_DIRS})
 
 add_subdirectory(include)
 add_subdirectory(src)
 
-##############################################################################
-# Exports
-##############################################################################
-
-# Downstream CMake3 compatibility 
-ament_export_interfaces(${PROJECT_NAME})
-# Downstream CMake2 compatibility
-ament_export_include_directories(include)
-
-ament_package()
 

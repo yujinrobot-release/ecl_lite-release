@@ -2,55 +2,47 @@
 # Cmake
 ##############################################################################
 
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 2.8.3)
 project(ecl_time_lite)
 
 ##############################################################################
-# Find Packages
+# Catkin
 ##############################################################################
 
-# Turn -isystem off. Actually like to see warnings from underlying packages
-# and regardless, have run into trouble because of the ordering it induces.
-set(CMAKE_NO_SYSTEM_FROM_IMPORTED TRUE)
-
-find_package(ament_cmake_ros REQUIRED)
-find_package(ecl_build REQUIRED)
-find_package(ecl_config REQUIRED)
-find_package(ecl_errors REQUIRED)
+find_package(catkin REQUIRED COMPONENTS ecl_build ecl_config ecl_errors)
+file(MAKE_DIRECTORY ${CATKIN_DEVEL_PREFIX}/include)
 
 ##############################################################################
-# Project Configuration
+# Platform Configuration
 ##############################################################################
 
-ament_package_xml()
-ecl_enable_cxx14_compiler()
-ecl_enable_cxx_warnings()
-
-file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/include)
-
-# This configures ECL_PLATFORM_TIME_LIBRARIES and
+# This configures ECL_PLATFORM_TIME_LIBRARIES and 
 # other ECL_PLATFORM_HAS_XXX flags
-ecl_detect_timers()
-
-##############################################################################
-# Sources
-##############################################################################
-
-add_subdirectory(include)
-add_subdirectory(src)
+ecl_detect_timers()  
 
 ##############################################################################
 # Exports
 ##############################################################################
 
-# Downstream CMake3 compatibility 
-ament_export_interfaces(HAS_LIBRARY_TARGET ${PROJECT_NAME})
-# Downstream CMake2 compatibility
-ament_export_include_directories(include)
-ament_export_libraries(${PROJECT_NAME})
+catkin_package(
+        INCLUDE_DIRS include ${CATKIN_DEVEL_PREFIX}/include
+        LIBRARIES ${PROJECT_NAME}
+        DEPENDS ECL_PLATFORM_TIME
+	)
+include_directories(include ${catkin_INCLUDE_DIRS})
 
-ament_export_dependencies(
-    ecl_config
-    ecl_errors
-)
-ament_package()
+##############################################################################
+# CMake File Configuration
+##############################################################################
+
+# Make sure we pick up cmake configured files
+include_directories(${CATKIN_DEVEL_PREFIX}/include)
+
+##############################################################################
+# Actual project configuration
+##############################################################################
+
+add_subdirectory(include)
+add_subdirectory(src)
+
+

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<package format="2">
+<package>
   <name>ecl_console</name>
-  <version>1.0.6</version>
+  <version>0.61.6</version>
   <description>
      Color codes for ansii consoles.
   </description>
@@ -12,17 +12,13 @@
   <url type="repository">https://github.com/stonier/ecl_lite</url>
   <url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
 
-  <buildtool_depend>ament_cmake_ros</buildtool_depend>
-
+  <buildtool_depend>catkin</buildtool_depend>
   <build_depend>ecl_license</build_depend>
   <build_depend>ecl_build</build_depend>
   <build_depend>ecl_config</build_depend>
-  <exec_depend>ecl_license</exec_depend>
-  <exec_depend>ecl_build</exec_depend>
-  <exec_depend>ecl_config</exec_depend>
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
+  <run_depend>ecl_license</run_depend>
+  <run_depend>ecl_build</run_depend>
+  <run_depend>ecl_config</run_depend>
 </package>
 
 

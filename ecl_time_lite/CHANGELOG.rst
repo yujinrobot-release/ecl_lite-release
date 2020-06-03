@@ -1,10 +1,6 @@
-=========
-Changelog
-=========
-
-1.0.3 (2018-08-21)
-------------------
-* pedantic error message fixes for const error string methods on clang/macosx
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Changelog for package ecl_time_lite
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 0.61.1 (2015-07-26)
 -------------------

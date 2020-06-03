@@ -23,7 +23,6 @@
  */
 TEST(TypeTests,fundamentals) {
 	bool result = ecl::is_big_endian();
-        (void)result;
 	result = false;
     SUCCEED();
 }
