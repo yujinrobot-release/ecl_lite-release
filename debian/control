@@ -1,0 +1,12 @@
+Source: ros-noetic-ecl-console
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-ecl-build, ros-noetic-ecl-config, ros-noetic-ecl-license
+Homepage: http://wiki.ros.org/ecl_console
+Standards-Version: 3.9.2
+
+Package: ros-noetic-ecl-console
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-ecl-build, ros-noetic-ecl-config, ros-noetic-ecl-license
+Description: Color codes for ansii consoles.
