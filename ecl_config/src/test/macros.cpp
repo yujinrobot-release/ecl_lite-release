@@ -1,9 +1,7 @@
 /**
- * @file /ecl_config/src/test/endianness.cpp
+ * @file /ecl_config/src/test/char_sign.cpp
  *
- * @brief Unit test for endianness.
- *
- * @date February, 2011
+ * @brief Tests for ecl macros
  **/
 
 /*****************************************************************************
@@ -12,20 +10,17 @@
 
 #include <iostream>
 #include <gtest/gtest.h>
-#include "../../include/ecl/config/endianness.hpp"
+#include "../../include/ecl/config/macros.hpp"
 
 /*****************************************************************************
 ** Tests
 *****************************************************************************/
-/*
- * Doesn't matter what the result is, just provide coverage.
- * compile time if they aren't.
- */
-TEST(TypeTests,fundamentals) {
-	bool result = ecl::is_big_endian();
-        (void)result;
-	result = false;
-    SUCCEED();
+
+TEST(Macros, unused) {
+  // without ECL_UNUSED, with the current project settings, this should cause
+  // 'error: typedef 'foo' locally defined but not used on at least gcc
+  typedef int ECL_UNUSED foo;
+  SUCCEED();
 }
 
 /*****************************************************************************
@@ -33,8 +28,8 @@ TEST(TypeTests,fundamentals) {
 *****************************************************************************/
 
 int main(int argc, char **argv) {
-	testing::InitGoogleTest(&argc,argv);
-    return RUN_ALL_TESTS();
+  testing::InitGoogleTest(&argc,argv);
+  return RUN_ALL_TESTS();
 }
 
 

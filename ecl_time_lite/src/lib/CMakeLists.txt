@@ -3,13 +3,33 @@
 ##############################################################################
 
 file(GLOB SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp)
-add_library(${PROJECT_NAME} ${SOURCES})
 
-target_link_libraries(${PROJECT_NAME} ${ECL_PLATFORM_TIME_LIBRARIES})
-target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
-install(TARGETS ${PROJECT_NAME}
-   RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
-   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-   PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE
+###############################################################################
+# Targets
+###############################################################################
+
+add_library(${PROJECT_NAME} ${SOURCES})
+target_include_directories(
+  ${PROJECT_NAME}
+  PUBLIC
+    $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
+    $<BUILD_INTERFACE:${PROJECT_BINARY_DIR}/include>
+    $<INSTALL_INTERFACE:include>
+)
+target_link_libraries(${PROJECT_NAME}
+  PUBLIC
+    ecl_config::ecl_config
+    ecl_errors::ecl_errors
+    ${ECL_PLATFORM_TIME_LIBRARIES}
+)
+set_target_properties(${PROJECT_NAME}
+  PROPERTIES
+    SOVERSION ${${PROJECT_NAME}_VERSION}
+    VERSION ${${PROJECT_NAME}_VERSION}
+)
+
+install(TARGETS ${PROJECT_NAME} EXPORT ${PROJECT_NAME}
+   RUNTIME DESTINATION bin
+   ARCHIVE DESTINATION lib
+   LIBRARY DESTINATION lib
 )

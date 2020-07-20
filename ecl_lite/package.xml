@@ -1,6 +1,7 @@
-<package>
+<?xml version="1.0"?>
+<package format="2">
   <name>ecl_lite</name>
-  <version>0.61.6</version>
+  <version>1.1.0</version>
   <description>
     Libraries and utilities for embedded and low-level linux development.
   </description>
@@ -11,15 +12,16 @@
   <url type="repository">https://github.com/stonier/ecl_lite</url>
   <url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
 
-  <buildtool_depend>catkin</buildtool_depend>
-  <run_depend>ecl_config</run_depend>
-  <run_depend>ecl_converters_lite</run_depend>
-  <run_depend>ecl_errors</run_depend>
-  <run_depend>ecl_io</run_depend>
-  <run_depend>ecl_sigslots_lite</run_depend>
-  <run_depend>ecl_time_lite</run_depend>
+  <buildtool_depend>ament_cmake_ros</buildtool_depend>
+
+  <exec_depend>ecl_config</exec_depend>
+  <exec_depend>ecl_converters_lite</exec_depend>
+  <exec_depend>ecl_errors</exec_depend>
+  <exec_depend>ecl_io</exec_depend>
+  <exec_depend>ecl_sigslots_lite</exec_depend>
+  <exec_depend>ecl_time_lite</exec_depend>
 
   <export>
-    <metapackage/>
+    <build_type>ament_cmake</build_type>
   </export>
 </package>
