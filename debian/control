@@ -1,0 +1,12 @@
+Source: ros-foxy-ecl-config
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-foxy-ament-cmake-gtest, ros-foxy-ament-cmake-ros, ros-foxy-ament-lint-auto, ros-foxy-ament-lint-common, ros-foxy-ecl-build, ros-foxy-ecl-license, ros-foxy-ros-workspace
+Homepage: http://wiki.ros.org/ecl_config
+Standards-Version: 3.9.2
+
+Package: ros-foxy-ecl-config
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-foxy-ecl-build, ros-foxy-ecl-license, ros-foxy-ros-workspace
+Description: These tools inspect and describe your system with macros, types and functions.
