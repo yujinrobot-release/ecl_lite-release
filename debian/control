@@ -1,0 +1,12 @@
+Source: ros-foxy-ecl-lite
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-foxy-ament-cmake-ros, ros-foxy-ros-workspace
+Homepage: http://www.ros.org/wiki/ecl_lite
+Standards-Version: 3.9.2
+
+Package: ros-foxy-ecl-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-foxy-ecl-config, ros-foxy-ecl-converters-lite, ros-foxy-ecl-errors, ros-foxy-ecl-io, ros-foxy-ecl-sigslots-lite, ros-foxy-ecl-time-lite, ros-foxy-ros-workspace
+Description: Libraries and utilities for embedded and low-level linux development.
