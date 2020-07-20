@@ -1,0 +1,12 @@
+Source: ros-foxy-ecl-console
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-foxy-ament-cmake-ros, ros-foxy-ecl-build, ros-foxy-ecl-config, ros-foxy-ecl-license, ros-foxy-ros-workspace
+Homepage: http://wiki.ros.org/ecl_console
+Standards-Version: 3.9.2
+
+Package: ros-foxy-ecl-console
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-foxy-ecl-build, ros-foxy-ecl-config, ros-foxy-ecl-license, ros-foxy-ros-workspace
+Description: Color codes for ansii consoles.
