@@ -1,0 +1,13 @@
+Source: ros-foxy-ecl-converters-lite
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-foxy-ament-cmake-gtest, ros-foxy-ament-cmake-ros, ros-foxy-ament-lint-auto, ros-foxy-ament-lint-common, ros-foxy-ecl-config, ros-foxy-ecl-license, ros-foxy-ros-workspace
+Homepage: http://wiki.ros.org/ecl_converters_lite
+Standards-Version: 3.9.2
+
+Package: ros-foxy-ecl-converters-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-foxy-ecl-config, ros-foxy-ecl-license, ros-foxy-ros-workspace
+Description: These are a very simple version of some of the functions in ecl_converters suitable for firmware development.
+ That is, there is no use of new, templates or exceptions.
