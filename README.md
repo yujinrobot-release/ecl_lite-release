@@ -1,3 +1,34 @@
+## ecl_lite (foxy) - 1.1.0-1
+
+The packages in the `ecl_lite` repository were released into the `foxy` distro by running `/usr/bin/bloom-release --track foxy --rosdistro foxy ecl_lite` on `Mon, 20 Jul 2020 04:11:31 -0000`
+
+These packages were released:
+- `ecl_config`
+- `ecl_console`
+- `ecl_converters_lite`
+- `ecl_errors`
+- `ecl_io`
+- `ecl_lite`
+- `ecl_sigslots_lite`
+- `ecl_time_lite`
+
+Version of package(s) in repository `ecl_lite`:
+
+- upstream repository: https://github.com/stonier/ecl_lite.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.1.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.7`
+- catkin_pkg version: `0.4.22`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.2`
+- vcstools version: `0.1.42`
+
+
 ## ecl_lite (noetic) - 0.61.6-1
 
 The packages in the `ecl_lite` repository were released into the `noetic` distro by running `/usr/bin/bloom-release --track noetic --rosdistro noetic ecl_lite` on `Wed, 03 Jun 2020 13:26:44 -0000`
