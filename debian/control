@@ -1,0 +1,13 @@
+Source: ros-foxy-ecl-errors
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-foxy-ament-cmake-ros, ros-foxy-ecl-build, ros-foxy-ecl-config, ros-foxy-ecl-license, ros-foxy-ros-workspace
+Homepage: http://wiki.ros.org/ecl_errors
+Standards-Version: 3.9.2
+
+Package: ros-foxy-ecl-errors
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-foxy-ecl-config, ros-foxy-ecl-license, ros-foxy-ros-workspace
+Description: This library provides lean and mean error mechanisms.
+ It includes c style error functions as well as a few useful macros. For higher level mechanisms, refer to ecl_exceptions.
