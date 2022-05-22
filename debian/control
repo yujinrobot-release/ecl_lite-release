@@ -1,0 +1,12 @@
+Source: ros-galactic-ecl-console
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-galactic-ament-cmake-ros, ros-galactic-ecl-build, ros-galactic-ecl-config, ros-galactic-ecl-license, ros-galactic-ros-workspace
+Homepage: http://wiki.ros.org/ecl_console
+Standards-Version: 3.9.2
+
+Package: ros-galactic-ecl-console
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-galactic-ecl-build, ros-galactic-ecl-config, ros-galactic-ecl-license, ros-galactic-ros-workspace
+Description: Color codes for ansii consoles.
