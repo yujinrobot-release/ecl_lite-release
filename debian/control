@@ -1,0 +1,12 @@
+Source: ros-galactic-ecl-lite
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-galactic-ament-cmake-ros, ros-galactic-ros-workspace
+Homepage: http://www.ros.org/wiki/ecl_lite
+Standards-Version: 3.9.2
+
+Package: ros-galactic-ecl-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-galactic-ecl-config, ros-galactic-ecl-converters-lite, ros-galactic-ecl-errors, ros-galactic-ecl-io, ros-galactic-ecl-sigslots-lite, ros-galactic-ecl-time-lite, ros-galactic-ros-workspace
+Description: Libraries and utilities for embedded and low-level linux development.
