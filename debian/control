@@ -1,0 +1,13 @@
+Source: ros-galactic-ecl-converters-lite
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-galactic-ament-cmake-gtest <!nocheck>, ros-galactic-ament-cmake-ros, ros-galactic-ament-lint-auto <!nocheck>, ros-galactic-ament-lint-common <!nocheck>, ros-galactic-ecl-config, ros-galactic-ecl-license, ros-galactic-ros-workspace
+Homepage: http://wiki.ros.org/ecl_converters_lite
+Standards-Version: 3.9.2
+
+Package: ros-galactic-ecl-converters-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-galactic-ecl-config, ros-galactic-ecl-license, ros-galactic-ros-workspace
+Description: These are a very simple version of some of the functions in ecl_converters suitable for firmware development.
+ That is, there is no use of new, templates or exceptions.
