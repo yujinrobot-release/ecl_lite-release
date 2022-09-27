@@ -1,0 +1,12 @@
+Source: ros-rolling-ecl-time-lite
+Section: misc
+Priority: optional
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake-ros, ros-rolling-ecl-build, ros-rolling-ecl-config, ros-rolling-ecl-errors, ros-rolling-ecl-license, ros-rolling-ros-workspace
+Homepage: http://wiki.ros.org/ecl_time_lite
+Standards-Version: 3.9.2
+
+Package: ros-rolling-ecl-time-lite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-ecl-build, ros-rolling-ecl-config, ros-rolling-ecl-errors, ros-rolling-ecl-license, ros-rolling-ros-workspace
+Description: Provides a portable set of time functions that are especially useful for porting other code or being wrapped by higher level c++ classes.
